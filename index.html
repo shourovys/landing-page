@@ -15,7 +15,7 @@
               Inter: ['Inter', 'sans-serif'],
             },
             animation: {
-              'infinite-scroll': 'infinite-scroll 25s linear infinite',
+              'infinite-scroll': 'infinite-scroll 20s linear infinite',
             },
             keyframes: {
               'infinite-scroll': {
@@ -27,16 +27,14 @@
         },
       };
     </script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="flex flex-col max-w-screen overflow-x-hidden">
     <!-- Hero Section  -->
-    <section class="bg-red-600 py-10 md:py-10 md:pb-14">
+    <section
+      class="bg-red-600 py-10 md:py-10 md:pb-14 max-w-screen overflow-x-hidden"
+    >
       <header
         class="container mx-auto px-5 flex items-center justify-between gap-5"
       >
@@ -66,11 +64,13 @@
         future looks brights!
       </p>
       <!-- ml-[calc(50%-40vw)] -->
-      <div class="w-full inline-flex flex-nowrap gap-4 md:gap-6">
+      <div
+        class="w-full inline-flex justify-start gap-4 md:gap-6 flex-nowrap min-w-max"
+      >
         <div
-          class="-mt-11 flex w-full justify-end gap-4 md:gap-6 self-center font-Inter animate-infinite-scroll"
+          class="-mt-11 flex flex-nowrap w-full justify-start gap-4 md:gap-6 self-center font-Inter animate-infinite-scroll"
         >
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -97,7 +97,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -124,7 +124,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -151,7 +151,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -178,7 +178,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -207,10 +207,10 @@
           </article>
         </div>
         <div
-          class="-mt-11 flex w-full justify-end gap-4 md:gap-6 self-center font-Inter animate-infinite-scroll"
+          class="-mt-11 flex flex-nowrap w-full justify-end gap-4 md:gap-6 self-center font-Inter animate-infinite-scroll"
           aria-hidden="true"
         >
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -237,7 +237,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -264,7 +264,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -291,7 +291,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -318,7 +318,7 @@
               </div>
             </div>
           </article>
-          <article class="flex w-[357px] min-w-60 flex-col">
+          <article class="flex w-60 md:w-[357px] min-w-60 flex-col">
             <div
               class="flex items-center justify-center gap-2.5 rounded-xl overflow-hidden shadow-[6px_6px_24px_rgba(102,66,66,0.2)]"
             >
@@ -369,6 +369,9 @@
         >
           <article
             class="relative min-w-60 flex-1 shrink basis-0 rounded-xl overflow-hidden bg-white shadow-[6px_6px_12px_rgba(47,47,47,0.02)] p-3 pb-4 md:p-4 xl:pb-6 space-y-4 xl:space-y-6"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="50"
           >
             <div
               class="flex w-full flex-1 shrink basis-0 flex-col items-center justify-center rounded-lg"
@@ -400,6 +403,9 @@
           </article>
           <article
             class="relative min-w-60 flex-1 shrink basis-0 rounded-xl overflow-hidden bg-white shadow-[6px_6px_12px_rgba(47,47,47,0.02)] p-3 pb-4 md:p-4 xl:pb-6 space-y-4 xl:space-y-6"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="250"
           >
             <div
               class="flex w-full flex-1 shrink basis-0 flex-col items-center justify-center rounded-lg"
@@ -431,6 +437,9 @@
           </article>
           <article
             class="relative min-w-60 flex-1 shrink basis-0 rounded-xl overflow-hidden bg-white shadow-[6px_6px_12px_rgba(47,47,47,0.02)] p-3 pb-4 md:p-4 xl:pb-6 space-y-4 xl:space-y-6"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="450"
           >
             <div
               class="flex w-full flex-1 shrink basis-0 flex-col items-center justify-center rounded-lg"
@@ -462,6 +471,9 @@
           </article>
           <article
             class="relative min-w-60 flex-1 shrink basis-0 rounded-xl overflow-hidden bg-white shadow-[6px_6px_12px_rgba(47,47,47,0.02)] p-3 pb-4 md:p-4 xl:pb-6 space-y-4 xl:space-y-6"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="650"
           >
             <div
               class="flex w-full flex-1 shrink basis-0 flex-col items-center justify-center rounded-lg"
@@ -536,6 +548,11 @@
                 src="/img/signature.png"
                 alt="Patrick Bet-David's Signed Collection"
                 class="mt-4 md:mt-6 aspect-[3.38] w-full object-contain max-md:max-w-full"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              />
               />
             </div>
           </div>
@@ -546,12 +563,22 @@
                 src="/img/book1.png"
                 alt="Product from Patrick Bet-David's Signed Collection"
                 class="my-auto aspect-[0.63] w-[370px] min-w-60 self-stretch object-contain"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              />
               />
               <img
                 loading="lazy"
                 src="/img/book2.png"
                 alt="Another product from Patrick Bet-David's Signed Collection"
                 class="my-auto aspect-[0.78] w-[404px] min-w-60 self-stretch object-contain"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              />
               />
             </div>
           </div>
@@ -569,11 +596,34 @@
           >
             <span
               class="before:content-[''] before:bg-[url('/icon/quotes.svg')] before:bg-contain before:bg-no-repeat before:w-[4rem] before:h-[4rem] before:absolute before:top-[-2rem] before:left-[-1rem] md:before:w-[12rem] md:before:h-[12rem] md:before:top-[-8rem] md:before:-left-[3.5rem]"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              data-aos-delay="0"
             >
               Our mission is to enlighten, entertain
             </span>
-            <span class=""> and empower current and future </span>
-            <span class=""> leaders around the world. </span>
+            <span
+              class=""
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              and empower current and future
+            </span>
+            <span
+              class=""
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              data-aos-delay="600"
+            >
+              leaders around the world.
+            </span>
           </h2>
         </div>
         <div class="w-[20%] flex-shrink-0 min-w-56 max-md:w-full relative">
@@ -804,5 +854,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
