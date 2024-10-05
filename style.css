@@ -18,3 +18,8 @@
 body {
   font-family: Montserrat;
 }
+
+.text-outline {
+  -webkit-text-stroke: 0.04em black;
+  paint-order: stroke fill;
+}
