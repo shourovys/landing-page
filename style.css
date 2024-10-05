@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'ActOfRejection';
+  src: url('/fonts/act_of_rejection/Act_Of_Rejection.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter/Inter-VariableFont_opsz,wght.ttf')
+    format('truetype');
+}
+
+body {
+  font-family: Montserrat;
+}
